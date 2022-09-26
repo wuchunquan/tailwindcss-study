@@ -1,7 +1,6 @@
 .header-nav{
     margin-left: auto;
-    margin-right: 2rem;
-
+    margin-right: 0.5rem;
 }
 .header-nav>ul{
     display: flex;
@@ -11,6 +10,10 @@
     @apply font-medium text-gray-300
 }
 @media screen and (min-width: 768px){
+    .header-nav{
+        margin-left: auto;
+        margin-right: 2rem;
+    }
     .header-nav>ul{
         display: flex;
         justify-content: center;

@@ -12,7 +12,7 @@ export default function Header({style}:{style:React.CSSProperties }) {
     const location = useLocation()
     const locationPathname = location.pathname
     return (<header className="font-bold m-0 flex flex-row bg-gray-600 border-b-4 border-b-gray-500">
-        <h1 className="text-xl md:text-3xl mx-4 flex flex-row  justify-center items-center">
+        <h1 className="md:text-3xl mx-2 md:mx-4 flex flex-row  justify-center items-center">
             <span className="text-blue-200 hover:text-blue-300">新</span>
             <span className="ml-1 text-red-400 hover:text-red-200">视感</span>
         </h1>
