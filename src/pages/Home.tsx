@@ -70,13 +70,13 @@ export default function Home() {
                                 <span className="text-amber-300">\n</span>
                                 <span className="nfs-code__value">我们去草原玩吧！</span>
                             </p>
-                            <p><span className="nfs-code__line">5•</span><span className="nfs-code__cmd">背</span>
+                            <div><span className="nfs-code__line">5•</span><span className="nfs-code__cmd">背</span>
                                 <span>|</span>
                                 <div className="nfs-code__tip">
                                     <p>背景</p>
                                     <p>背景音乐</p>
                                 </div>
-                            </p>
+                            </div>
 
                         </div>
                     </div>

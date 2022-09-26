@@ -61,6 +61,11 @@ header:hover .transition-font {
     @apply mx-2 my-0.5
 
 }
+.nfs-code > div {
+    /*text-indent: 1em;*/
+    @apply mx-2 my-0.5
+
+}
 
 .nfs-code__line {
     color: #f0f8ff73;

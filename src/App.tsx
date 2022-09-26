@@ -1,18 +1,27 @@
 import './App.css'
 import Home from "./pages/Home";
-import {Router, createBrowserRouter, RouterProvider} from "react-router-dom"
+import {createBrowserRouter, Routes, RouterProvider,Route, BrowserRouter} from "react-router-dom"
 import Header from "./components/Header/Header";
+import Docs from "./pages/Docs";
 
-const router = createBrowserRouter([{
-    path: "/", element: <Home/>
-}],{basename:"/tailwindcss-study/"})
+// const router = createBrowserRouter([
+//     {path: "/", element: <Home/>},
+//     {path: "/docs", element: <Docs/>},
+// ], {basename: "/tailwindcss-study/"})
 
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            <RouterProvider router={router}></RouterProvider>
-        </div>
+        <BrowserRouter basename={"/tailwindcss-study/"}>
+            <div className="App">
+                <Header/>
+                <Routes >
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/docs" element={<Docs/>}/>
+                </Routes>
+
+            </div>
+        </BrowserRouter>
+
     )
 }
 
