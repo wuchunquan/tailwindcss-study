@@ -15,16 +15,17 @@ import News from "./pages/News";
 function App() {
     return (
         <BrowserRouter basename={"/tailwindcss-study/"}>
-            <div className="App">
-                <Header/>
-                <Routes >
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/docs" element={<Docs/>}/>
-                    <Route path="/examples" element={<Examples/>}/>
-                    <Route path="/about" element={<About/>}/>
-                    <Route path="/news" element={<News/>}/>
-                </Routes>
-
+            <div className="App flex flex-col" >
+                <Header style={{flex:1}}/>
+                <div className="pages overflow-auto">
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/docs" element={<Docs/>}/>
+                        <Route path="/examples" element={<Examples/>}/>
+                        <Route path="/about" element={<About/>}/>
+                        <Route path="/news" element={<News/>}/>
+                    </Routes>
+                </div>
             </div>
         </BrowserRouter>
 
