@@ -23,7 +23,7 @@ export default function Home() {
                 </div>
                 <div className="rounded-2xl bg-gray-400 flex-1 m-2 flex items-center justify-center">
                     <h2 className="text-gray-800 text-xl md:text-2xl flex-auto text-center nfs-card">
-                        NFScript <span className="imp-word">简单、强大</span>的驱动脚本
+                        NFScript <span className="imp-word">简单、强大</span>的媒体脚本
                     </h2>
                     <div className="h-16 w-18 m-4  flex justify-center items-center text-4xl nfs-logo">NFS</div>
                     {/*<img alt="vite" className="h-16 w-16 m-4 rotate-img" src={viteLogo}/>*/}
