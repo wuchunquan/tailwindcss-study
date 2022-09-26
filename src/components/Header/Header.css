@@ -1,0 +1,24 @@
+.header-nav{
+    margin-left: auto;
+    margin-right: 2rem;
+
+}
+.header-nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    @apply font-medium text-gray-300
+
+}
+.header-nav>ul>li{
+    cursor: pointer;
+    @apply opacity-70
+}
+.header-nav>ul>li:hover{
+    color: #a9d8ec;
+    @apply opacity-90
+}
+.header-nav>ul>li{
+    @apply m-2
+}
