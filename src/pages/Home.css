@@ -111,6 +111,7 @@ header:hover .transition-font {
 
 .img-show-1 {
     animation: hue-rotate-animation ease 10s infinite;
+    @apply h-60
     /*transition: all 10s ease;*/
 }
 

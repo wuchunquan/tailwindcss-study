@@ -17,8 +17,10 @@ function loadImage(url: string, handel: ()=>any) {
 
 export default function Home() {
     const [showImgSrc,setShowImgSrc]=useState("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7")
+    const [imgLoaded,setImgLoaded]=useState(false)
     loadImage(pic,()=>{
         setShowImgSrc(pic)
+        setImgLoaded(true)
     })
     return (<div className="mx-auto box-border m-0 overflow-x-hidden">
         <main className="flex flex-col w-full items-center">
@@ -44,21 +46,21 @@ export default function Home() {
             </section>
             <section className="flex flex-col md:flex-row w-full  m-2 gap-2 ">
                 <div className="flex flex-1 flex-col gap-4 mx-2 animate__fadeInLeft animate__animated">
-                    <div className="card-shadow flex-auto gap-4 ">
-                        <img src={showImgSrc} className="object-cover rounded-3xl w-full h-full img-show-1 bg-gray-700"/>
+                    <div className="card-shadow flex-auto gap-4" style={{height:"23rem"}}>
+                        <img src={showImgSrc} className={`object-cover rounded-3xl w-full h-full ${imgLoaded?'img-show-1':''} bg-gray-700`}/>
                     </div>
                     <div className="flex-auto flex  flex-row gap-4 ">
-                        <div className="flex-1 card-shadow filter-code-card ">
+                        <div className="flex-1 card-shadow filter-code-card h-48">
                             <div className="filter-code">
                                 <p>filter: hue-rotate(90deg);</p>
                             </div>
                             <img src={showImgSrc} className="object-cover rounded-3xl w-full h-full img-show-2 bg-gray-700"/>
                         </div>
-                        <div className="flex-1 card-shadow filter-code-card ">
+                        <div className="flex-1 card-shadow filter-code-card h-48">
                             <div className="filter-code">
                                 <p>filter: hue-rotate(180deg);</p>
                             </div>
-                            <img src={showImgSrc} className="object-cover rounded-3xl w-full h-full img-show-3 bg-gray-700"/>
+                            <img src={showImgSrc} className="object-cover rounded-3xl w-full h-full img-show-3 bg-gray-700 "/>
                         </div>
                     </div>
                 </div>
