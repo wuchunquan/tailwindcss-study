@@ -85,7 +85,7 @@ export default function Home() {
             <section className="flex w-full">
                 <div className="mx-auto my-4">
                     <h1 className="text-gray-50 text-xl text-center">
-                        他们都在用
+                        合作伙伴
                     </h1>
                     <div className="flex flex-row flex-wrap md:w-4/5 mx-auto justify-center items-center">
                         {['https://sponsors.vuejs.org/images/mqtt_x.png',
