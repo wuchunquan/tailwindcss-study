@@ -8,7 +8,7 @@ function ALink({name, to, locationPathname}: { name: string, to: string, locatio
     return <Link style={{color: locationPathname == to ? "var(--color-title-red)" : "inherit"}} to={to}>{name}</Link>
 }
 
-export default function Header({style}:{style:React.CSSProperties }) {
+export default function Header({style}:{style?:React.CSSProperties }) {
     const location = useLocation()
     const locationPathname = location.pathname
     return (<header className="font-bold m-0 flex flex-row bg-gray-600 border-b-4 border-b-gray-500">

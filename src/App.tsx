@@ -16,7 +16,7 @@ function App() {
     return (
         <BrowserRouter basename={"/tailwindcss-study/"}>
             <div className="App flex flex-col" >
-                <Header style={{flex:1}}/>
+                <Header />
                 <div className="pages overflow-auto">
                     <Routes>
                         <Route path="/" element={<Home/>}/>
